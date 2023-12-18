@@ -1,0 +1,31 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+.header-logo {
+  color: #111;
+  font-size: 18px;
+  font-weight: 700;
+  /* line-height = line-height in px (20px) / on font-size in px, інтерліньяж ще називається, краще ставити у відносних одиницях (множник) бо тоді він реагує на зміну розміру шрифту*/
+  line-height: 1.11;
+  /* if we don't put in px need to add em in letter-spacing */
+  letter-spacing: 0.03em;
+}
+.header-menu-link {
+  color: #111;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.2em;
+}
