@@ -52,3 +52,5 @@ clip-path: inset(100%);
 clip: rect(0 0 0 0);
 overflow: hidden;
 }
+
+6. практики accessability? semantic, atribute tel, mailto;
