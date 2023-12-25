@@ -19,7 +19,7 @@
 
 1. якщо не додати доктайп то нічого не буде, браузер все рівно прочитає (мо просто допомогаємо цим йому)
 
-<!-- 3 lesson online -->
+<!-- 3 lesson online (css)-->
 
 1. tag wrap -> alt+W highlight part of code and press alt+W
 2. header can be several times on one page, it can be connected to special section
@@ -31,3 +31,24 @@
 8. ctrl+f to change for example one element on another (in file)
 9. ctrl+shift+f change in the whole folder
 10. sheck styles in browser: site -> right click -> inspect -> computed
+
+<!-- 4 lesson online (css) -->
+
+1. базові основи терміналу часто запитують на співбесідах
+2. завдяки розширенню ecss tractor we can copy part of the code right click and put in css classes from html
+3. button does not inherit font-family
+4. by default in browser font-weight is 400 so we can remove it in paragraf
+5. if we want to hide h2 on page but not destroy semantic plus leave it visible for browser we can use css pattern
+   .visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
