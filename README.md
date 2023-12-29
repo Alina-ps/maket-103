@@ -72,3 +72,14 @@ overflow: hidden;
 11. margin: 0 auto; ставить по центру батька
 12. max-width не більше вказаною, ширина будь яка але не більше ніж вказаної
 13. https://github.com/riko1212/fs-103
+
+<!-- 6 lesson online (module 3 flexbox) -->
+
+1. justify-content: center (can use to put elements in center)
+2. use game space frog to play with flex (is in lectures)
+3. головна вісь за замовчуванням горизонтальна і зліва направо
+4. aling-content (seldomly used) but can ask on interview
+5. flex-grow by default is 0, flex-shrink by default 1
+6. щоб текст не стискав елемент у флексу треба задати флекс шрінк 0
+7. order дозволяє змінювати порядок елементів, задає вагу, за замовчуванням 0 тому якщо 1 це другий, 2 третій, -1 перед 0, при умові однакових ордерів порядок по html
+8. елементи флексу автоматично стають блоковими

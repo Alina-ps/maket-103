@@ -54,6 +54,10 @@ ul {
   color: #fd9222;
 }
 
+.img {
+  display: block;
+}
+
 .container {
   max-width: 1166px;
   width: 100%;
@@ -69,6 +73,19 @@ ul {
   padding-bottom: 32px;
 }
 
+.header-container {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-logo {
   color: #111;
   font-size: 18px;
@@ -77,7 +94,20 @@ ul {
   line-height: 1.11;
   /* if we don't put in px need to add em in letter-spacing */
   letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
+
+.header-logo-italic {
+  font-style: italic;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 24px;
+}
+
 .header-menu-link {
   color: #111;
   font-size: 14px;
@@ -92,6 +122,11 @@ ul {
 
 .header-menu-link:focus {
   color: #fd9222;
+}
+
+.header-soc-list {
+  display: flex;
+  gap: 14px;
 }
 
 /* --------------------------------------- */
@@ -117,13 +152,22 @@ ul {
   max-width: 484px;
 }
 
+.hero-buttons {
+  display: flex;
+}
+
 .hero-buy-btn {
   color: #fff;
   font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background: #fd9222;
+  border: none;
   cursor: pointer;
+  margin-right: 14px;
 }
 
 .hero-made-btn {
@@ -131,6 +175,10 @@ ul {
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background: #fd9222;
+  background-color: transparent;
 }
 
 .hero-down-btn {
@@ -139,6 +187,7 @@ ul {
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  margin: left auto;
 }
 
 /* --------------------------------------- */
@@ -152,9 +201,14 @@ ul {
 }
 
 .features-list {
+  display: flex;
+  gap: 88px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .features-item {
+  width: calc((100% - 88px * 2) / 3);
 }
 
 .features-subtitle {
@@ -197,10 +251,19 @@ ul {
 }
 
 .taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
 }
 .taste-item {
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+  width: calc((100% - 32px * 3) / 4);
+  padding: 28px 23px;
 }
 .taste-img {
+  margin: 0 auto;
+  margin-bottom: 36px;
 }
 .taste-subtitle {
   color: #111;
@@ -208,6 +271,7 @@ ul {
   font-weight: 600;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  padding-left: 5px;
 }
 
 /* --------------------------------------- */
@@ -219,12 +283,22 @@ ul {
 }
 
 .made-title {
+  margin-bottom: 50px;
+}
+
+.made-wrap {
+  display: flex;
 }
 
 .made-title span {
 }
 
 .made-img {
+}
+
+.made-content {
+  background-color: #fff;
+  padding: 32px;
 }
 
 .made-subtitle {
