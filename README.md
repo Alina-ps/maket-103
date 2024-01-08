@@ -101,3 +101,4 @@ overflow: hidden;
 13. box-shadow generator, can search on internet
 14. ::before by default is inline element
 15. sprite with css does not work, only with html
+16. highlight part of code then alt+W and write tag you want
