@@ -83,3 +83,21 @@ overflow: hidden;
 6. щоб текст не стискав елемент у флексу треба задати флекс шрінк 0
 7. order дозволяє змінювати порядок елементів, задає вагу, за замовчуванням 0 тому якщо 1 це другий, 2 третій, -1 перед 0, при умові однакових ордерів порядок по html
 8. елементи флексу автоматично стають блоковими
+
+<!-- 7 lesson online (module 4 part 1) -->
+
+1. margin: 0 auto is to put in the center content
+2. pseudoelement selection (when we highlight text, the color of highlight)
+3. background-image: url()
+4. ../img/.... треба писати дві крапки бо нам треба вийти з папки css
+5. background-repeat: no-repeat (when you don't want to repeat img, by default it is repeat)
+6. background-position: center center (гоизонталь вертикаль)
+7. can write once center, друга властивість по дефолту буде центре якщо не прописати
+8. якщо прописати бекграунд сайз у відсотках воно буде ставить зображення пропорційно ширині фрейму
+9. при bacground-size: contain зображення буде або звужуватись або розтягуватись щоб заповнити максимум фрейму, в межах фрейму і залишаючи пропорції
+10. градієнт linear з background-image, background-image: linear-gradient (це функція) {direction, color, color}
+11. background-image: linear-gradient {color 0 40%, color}
+12. box-shadow: inset(внутрішня) 0(Зміщення по осі x) 0(Зміщення по осі y) 0(blur) 0() 0(color)
+13. box-shadow generator, can search on internet
+14. ::before by default is inline element
+15. sprite with css does not work, only with html
