@@ -93,7 +93,7 @@ ul {
   /* line-height = line-height in px (20px) / on font-size in px, інтерліньяж ще називається, краще ставити у відносних одиницях (множник) бо тоді він реагує на зміну розміру шрифту*/
   line-height: 1.11;
   /* if we don't put in px need to add em in letter-spacing */
-  letter-spacing: 0.03em;
+  letter-spacing: -0.03em;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -116,6 +116,15 @@ ul {
   letter-spacing: -0.2em;
 }
 
+.header-soc-icon {
+  fill: transparent;
+  stroke: #111;
+}
+
+.header-soc-icon:hover {
+  stroke: #fd9222;
+}
+
 .header-menu-link:hover {
   color: #fd9222;
 }
@@ -132,12 +141,20 @@ ul {
 /* --------------------------------------- */
 /* ---------------HERO------------------------ */
 
-/* .hero {
-  background: rgba(17, 17, 17, 0.6);
-} */
+.hero {
+  padding-bottom: 80px;
+}
 
 .hero-container {
   background-color: rgba(17, 17, 17, 0.6);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../img/chocolate_bg_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 30px;
   padding: 380px 40px 40px 40px;
 }
@@ -154,9 +171,11 @@ ul {
 
 .hero-buttons {
   display: flex;
+  align-items: center;
 }
 
 .hero-buy-btn {
+  padding: 14px 40px;
   color: #fff;
   font-family: inherit;
   font-size: 14px;
@@ -171,6 +190,7 @@ ul {
 }
 
 .hero-made-btn {
+  padding: 14px 40px;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -187,7 +207,7 @@ ul {
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  margin: left auto;
+  margin-left: auto;
 }
 
 /* --------------------------------------- */
@@ -216,7 +236,7 @@ ul {
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .features-item-text {
@@ -232,6 +252,7 @@ ul {
 .taste {
   padding-top: 120px;
 }
+
 .taste-title {
   max-width: 412px;
   margin: 0 auto 28px;
@@ -244,10 +265,7 @@ ul {
   line-height: 1.29;
   letter-spacing: -0.02em;
   max-width: 486px;
-  margin: 0 auto;
-}
-
-.taste-title span {
+  margin: 0 auto 50px;
 }
 
 .taste-list {
@@ -255,16 +273,19 @@ ul {
   flex-wrap: wrap;
   gap: 24px 32px;
 }
+
 .taste-item {
   border-radius: 15px;
   border: 1px solid #fd9222;
   width: calc((100% - 32px * 3) / 4);
   padding: 28px 23px;
 }
+
 .taste-img {
   margin: 0 auto;
   margin-bottom: 36px;
 }
+
 .taste-subtitle {
   color: #111;
   font-size: 14px;
@@ -288,9 +309,7 @@ ul {
 
 .made-wrap {
   display: flex;
-}
-
-.made-title span {
+  gap: 20px;
 }
 
 .made-img {
@@ -306,12 +325,36 @@ ul {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 28px;
+  max-width: 350px;
 }
 
 .made-list {
 }
 
 .made-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.made-item::before {
+  content: "";
+  display: flex;
+  width: 8px;
+  height: 8px;
+  background-color: #111111;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+  flex-shrink: 0;
+}
+
+.made-item:hover::before {
+  background-color: #fd9222;
+}
+
+.made-item + .made-item {
+  margin-top: 20px;
 }
 
 .made-item-text {
@@ -432,17 +475,19 @@ ul {
 .footer {
   background: #1e1823;
 }
+
 .footer-heading {
   color: #fff;
   font-size: 28px;
-  font-style: normal;
   font-weight: 500;
   line-height: calc(34 / 28);
   letter-spacing: -0.02em;
 }
+
 .footer-heading span {
   color: #fd9222;
 }
+
 .footer-subtitle {
   color: #fff;
   text-align: center;
@@ -456,22 +501,29 @@ ul {
 }
 .footer-soc-link {
 }
+
 .footer-address {
   font-style: normal;
 }
+
 .footer-address-list {
 }
 .footer-address-item {
 }
 .footer-address-link {
   color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
+
 .footer-navigation {
-  color: #fff;
+  /* color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.02em; */
 }
 .footer-menu-list {
 }
@@ -480,7 +532,9 @@ ul {
 .footer-menu-link {
 }
 
-.footer-menu-link:hover {
+.footer-menu-link:hover,
+.footer-menu-link:focus,
+.footer-menu-link:active {
   color: #fd9222;
 }
 
