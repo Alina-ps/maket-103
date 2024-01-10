@@ -229,6 +229,20 @@ ul {
 
 .features-item {
   width: calc((100% - 88px * 2) / 3);
+  position: relative;
+}
+
+.features-item:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 124px;
+  /* display: block; absolute emelents by default become blocks */
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: -44px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .features-subtitle {
