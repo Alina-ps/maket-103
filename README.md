@@ -115,3 +115,18 @@ overflow: hidden;
 8. skew - дуже рідко використовують, нахил, задається в градусах
 9. плавний перехід 1. плавний перехід ставлять на елемент а не на ховер
    є 4 властивості: 1 transition-property 2 transition-duration mandatory 3 transition-delay краще використовувати мілісекунди 4 transition-timing-function функція переходу cubic-bezier.com
+
+<!-- 8 lesson online (module 5 part 1) -->
+
+1. яким тегом зверстати модальне вікно - за допомогою діва
+2. position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   служить для центрування відносно батька
+3. in hometask we can put x but set margin left auto
+4. модальне вікно не входить ні до однієї секції
+5. найпоширенішим елементом форми є інпут
+6. input can work without tag form but for better behavour of browser
+7. label is inline element
+8. https://github.com/riko1212/fs-103/blob/mod-3/index.html
