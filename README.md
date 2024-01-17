@@ -103,7 +103,7 @@ overflow: hidden;
 15. sprite with css does not work, only with html
 16. highlight part of code then alt+W and write tag you want
 
-<!-- 7 lesson online (module 4 part 2) -->
+<!-- 8 lesson online (module 4 part 2) -->
 
 1. про позиціювання часто питають на інтервью
 2. 5 типів позиціювання: 1) position:static (by default); 2) position: relative (не виривається з потоку, має додаткові властивості які додають йому нову поведінку, властивості топ лефт райт і ботом) відносно нього можно позиціонувати абсолютні елементи; 3) position: absolute не знаходиться в потоці, зміщення вираховуються з боді в межах вьюпорта (на елемент до кого хочеш привязатись ставиш позішіон релатів тоді абсолют привязується до релатів елемента) абсолютний елемент привязується до першого найближчого елемента предка по структурі з позиціонуванням не статік 4) position:fixed; привязується до екрану 5) рідкісний, position:sticky; 3 умови щоб працювало:1 умова ? 2 умова батько має бути вище за цей елемент 3 умова точка привязки (привязка до екрана)
@@ -116,7 +116,7 @@ overflow: hidden;
 9. плавний перехід 1. плавний перехід ставлять на елемент а не на ховер
    є 4 властивості: 1 transition-property 2 transition-duration mandatory 3 transition-delay краще використовувати мілісекунди 4 transition-timing-function функція переходу cubic-bezier.com
 
-<!-- 8 lesson online (module 5 part 1) -->
+<!-- 9 lesson online (module 5 part 1) -->
 
 1. яким тегом зверстати модальне вікно - за допомогою діва
 2. position: absolute;
@@ -130,3 +130,21 @@ overflow: hidden;
 6. input can work without tag form but for better behavour of browser
 7. label is inline element
 8. https://github.com/riko1212/fs-103/blob/mod-3/index.html
+
+<!-- 10 lesson online (module 5 part 2) -->
+
+1. щоб модалку можна було відкривати/закривати
+   прописуємо
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;}
+   і створюємо is-open і прописуємо
+   .is-open {
+   opacity: 1;
+   visibility: visible;
+   pointer-events: auto;
+   }
+2. радіокнопка дає можливість вибрати одне з декількох варіантів
+3. в радіокнопці треба ставити одинаковий нейми щоб згрупувати
+4. чекбокс можно вибрати декілька варіантів
+5. letter-spacing in em : letterspacing in px/font-size

@@ -555,6 +555,15 @@ ul {
   position: fixed;
   top: 0;
   background-color: rgba(30, 24, 35, 0.615);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -616,4 +625,30 @@ ul {
   margin-bottom: 8px;
 }
 
+.check-text {
+  color: rgba(64, 64, 64, 0.6);
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+}
+
+.check-text a {
+  color: #fd9222;
+  text-decoration-line: underline;
+}
+
+.check-text span {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.4);
+  margin-right: 12px;
+}
+
+.check-input:checked + .check-text span {
+  background-color: #fd9222;
+  border: none;
+}
 /* --------------------------------------- */
