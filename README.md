@@ -144,7 +144,23 @@ overflow: hidden;
    visibility: visible;
    pointer-events: auto;
    }
-2. радіокнопка дає можливість вибрати одне з декількох варіантів
+2. радіокнопка дає можливість вибрати одне з декільк
+   ох варіантів
 3. в радіокнопці треба ставити одинаковий нейми щоб згрупувати
 4. чекбокс можно вибрати декілька варіантів
 5. letter-spacing in em : letterspacing in px/font-size
+
+<!-- 11 lesson online (module 6 part 1) -->
+
+1. при респонсивному сайт змінюється при кожному змінні розміру екрана, адаптивний сайт не змін на всій дорозі зміни розміру екрана, тільки на конкретно встановлених розмірах
+2. comment parts of code to add in media for desktop version
+3. як задається рзмір контейнеру це нозмір контента плюс паддінги (ліво.право)
+4. 1166 breackpoint for hometask
+
+<!-- 12 lesson online (module 6 part 2) -->
+
+1. растовий піксель найменший елемент картинки, на сторінці це фізичний піксель
+2. media screen and (min-device-pixel-racio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi)
+   підключаємо картинку з 2х
+3. можна вкладати всередину одного медіазапиту інший
+4. display: none to hide some part that will not be on mobile version for ex.
